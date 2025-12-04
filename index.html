@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مشروعي المدرسي</title>
+    <style>
+        @keyframes rainbow {
+            0% {color: red;}
+            14% {color: orange;}
+            28% {color: yellow;}
+            42% {color: green;}
+            57% {color: blue;}
+            71% {color: indigo;}
+            85% {color: violet;}
+            100% {color: red;}
+        }
+
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+            background: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff0000, #00ff00);
+            background-size: 1000% 1000%;
+            animation: gradientBG 15s ease infinite;
+            margin: 0;
+            padding: 50px;
+        }
+
+        @keyframes gradientBG {
+            0%{background-position:0% 50%;}
+            50%{background-position:100% 50%;}
+            100%{background-position:0% 50%;}
+        }
+
+        h1 {
+            font-size: 50px;
+            animation: rainbow 3s linear infinite;
+        }
+
+        h2 {
+            font-size: 30px;
+            animation: rainbow 2s linear infinite;
+        }
+
+        .glitch {
+            font-size: 40px;
+            color: #fff;
+            text-shadow: 2px 2px #f0f, -2px -2px #0ff;
+            animation: glitchAnim 1s infinite;
+        }
+
+        @keyframes glitchAnim {
+            0% {text-shadow: 2px 2px #f0f, -2px -2px #0ff;}
+            25% {text-shadow: -2px -2px #ff0, 2px 2px #0f0;}
+            50% {text-shadow: 2px -2px #0ff, -2px 2px #f00;}
+            75% {text-shadow: -2px 2px #0f0, 2px -2px #ff0;}
+            100% {text-shadow: 2px 2px #f0f, -2px -2px #0ff;}
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="glitch">جابر سالم محمد عسيري</h1>
+<h2 class="glitch">الصف: أول ثانوي، الشعبة: 103</h2>
+
+</body>
+</html>
